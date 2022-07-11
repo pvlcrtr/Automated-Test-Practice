@@ -16,7 +16,11 @@ public class Locators {
             public static By inputFieldB = By.xpath("//*[@id='sum2']");
             public static By buttonGetTotal = By.xpath("//*[@id='gettotal']//button");
             public static By readTotal = By.xpath("//*[@id='displayvalue']");
+        }
 
+        public static class CheckBoxDemo{
+            public static By inputSingleCheckBox = By.xpath("//*[@id='isAgeSelected']");
+            public static By fieldSingleCheckBox = By.xpath("//*[@id='txtAge']");
 
         }
     }
