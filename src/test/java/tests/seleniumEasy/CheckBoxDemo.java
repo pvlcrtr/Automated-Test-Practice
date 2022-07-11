@@ -1,22 +1,20 @@
 package tests.seleniumEasy;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import utils.Driver;
+import tests.BaseTest;
 
-public class CheckBoxDemo {
-
+public class CheckBoxDemo extends BaseTest {
     @BeforeMethod
+    @Override
     public void setup() {
-        Driver.setDriver();
-        pages.seleniumEasy.CheckBoxDemo.open();
-       // pages.seleniumEasy.SimpleFormDemo.closeAd();
+        super.setup();
+        pages.seleniumEasy.SimpleFormDemo.open();
     }
 
     @Test
-    public void testSingleCheckBox(){
+    public void testSingleCheckBox() {
         String actualMessage;
         String expectedMessage = "Success - Check box is checked";
 
@@ -25,10 +23,5 @@ public class CheckBoxDemo {
 
         Assert.assertEquals(actualMessage, expectedMessage);
 
-    }
-
-    @AfterMethod
-    public void teardown() {
-        Driver.closeDriver();
     }
 }

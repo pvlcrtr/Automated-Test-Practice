@@ -14,6 +14,7 @@ public class SimpleFormDemo {
         Common.clickElement(Locators.SeleniumEasy.SimpleFormDemo.buttonCloseAd);
 
     }
+
     public static void enterMessage(String expectedMessage) {
         Common.sendKeysToElement(
                 Locators.SeleniumEasy.SimpleFormDemo.inputMessage,

@@ -4,13 +4,14 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 import utils.Driver;
 
-public class SimpleFormDemo {
-
+public class SimpleFormDemo extends BaseTest {
     @BeforeMethod
+    @Override
     public void setup() {
-        Driver.setDriver();
+        super.setup();
         pages.seleniumEasy.SimpleFormDemo.open();
         pages.seleniumEasy.SimpleFormDemo.closeAd();
 
@@ -43,8 +44,5 @@ public class SimpleFormDemo {
         Assert.assertEquals(actualSum, inputSum);
     }
 
-    @AfterMethod
-    public void teardown() {
-        Driver.closeDriver();
-    }
+
 }
