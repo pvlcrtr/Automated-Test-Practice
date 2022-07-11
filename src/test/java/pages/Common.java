@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Driver;
 
@@ -11,7 +12,6 @@ import java.time.Duration;
 public class Common {
 
     public static void openUrl(String url) {
-        Driver.setDriver();
         Driver.getDriver().get(url);
     }
 
@@ -36,5 +36,9 @@ public class Common {
         return getElement(locator).getText();
     }
 
-
+    public static void selectOptionByValue(By locator, String value) {
+        WebElement webElement = getElement(locator);
+        Select selectElement = new Select(webElement);
+        selectElement.selectByValue(value);
+    }
 }

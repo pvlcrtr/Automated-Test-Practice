@@ -9,9 +9,6 @@ public class BaseTest {
     @BeforeMethod
     public void setup() {
         Driver.setDriver();
-//        pages.seleniumEasy.SimpleFormDemo.open();
-//        pages.seleniumEasy.SimpleFormDemo.closeAd();
-
     }
 
     @AfterMethod

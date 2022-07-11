@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0e2bb5f-b26d-4995-aca6-40e472b9cbd1" name="Changes" comment="Implement Before and After method annotations">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/CheckBoxDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/CheckBoxDemo.java" afterDir="false" />
+    <list default="true" id="a0e2bb5f-b26d-4995-aca6-40e472b9cbd1" name="Changes" comment="Create BaseTest and update previous test cases">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/SelectDropdownList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/SelectDropdownList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Common.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Locators.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.CheckBoxDemo.testSingleCheckBox">
+  <component name="RunManager" selected="TestNG.SelectDropdownList">
     <configuration name="CheckBoxDemo.testSingleCheckBox" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POMpaskaita" />
       <extension name="coverage">
@@ -53,6 +54,40 @@
       <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.CheckBoxDemo" />
       <option name="METHOD_NAME" value="testSingleCheckBox" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectDropdownList" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="POMpaskaita" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.seleniumEasy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.seleniumEasy" />
+      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.SelectDropdownList" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleFormDemo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="POMpaskaita" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.seleniumEasy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.seleniumEasy" />
+      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.SimpleFormDemo" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -97,6 +132,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SelectDropdownList" />
+        <item itemvalue="TestNG.SimpleFormDemo" />
         <item itemvalue="TestNG.CheckBoxDemo.testSingleCheckBox" />
         <item itemvalue="TestNG.SimpleFormDemo.testSingleInputFieldInSeleniumEasy" />
         <item itemvalue="TestNG.SimpleFormDemo.testTwoInputFieldsSeleniumEasy" />
@@ -133,7 +170,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657540636661</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create test of CheckBoxDemo">
+      <created>1657542631676</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657542631677</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Create BaseTest and update previous test cases">
+      <created>1657543701120</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657543701120</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,6 +202,8 @@
     <MESSAGE value="Create Common, Driver, Locators, SimpleFormDemo classes" />
     <MESSAGE value="Add testTwoInputField" />
     <MESSAGE value="Implement Before and After method annotations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Before and After method annotations" />
+    <MESSAGE value="Create test of CheckBoxDemo" />
+    <MESSAGE value="Create BaseTest and update previous test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create BaseTest and update previous test cases" />
   </component>
 </project>
