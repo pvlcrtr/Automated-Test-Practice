@@ -1,17 +1,23 @@
 package tests.seleniumEasy;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utils.Driver;
 
 public class SimpleFormDemo {
 
-    @Test
-    public void testSingleInputFieldInSeleniumEasy() {
+    @BeforeMethod
+    public void setup() {
         Driver.setDriver();
         pages.seleniumEasy.SimpleFormDemo.open();
         pages.seleniumEasy.SimpleFormDemo.closeAd();
 
+    }
+
+    @Test
+    public void testSingleInputFieldInSeleniumEasy() {
         String expectedMessage = "Pavel";
         String actualMessage;
 
@@ -19,10 +25,7 @@ public class SimpleFormDemo {
         pages.seleniumEasy.SimpleFormDemo.clickShowMessageButton();
         actualMessage = pages.seleniumEasy.SimpleFormDemo.readMessage();
 
-
         Assert.assertEquals(actualMessage, expectedMessage);
-
-        Driver.closeDriver();
     }
 
     @Test
@@ -30,18 +33,18 @@ public class SimpleFormDemo {
         String inputA = "5";
         String inputB = "7";
         String inputSum = "12";
-
-        Driver.setDriver();
-        pages.seleniumEasy.SimpleFormDemo.open();
-        pages.seleniumEasy.SimpleFormDemo.closeAd();
+        String actualSum;
 
         pages.seleniumEasy.SimpleFormDemo.enterValueA(inputA);
         pages.seleniumEasy.SimpleFormDemo.enterValueB(inputB);
         pages.seleniumEasy.SimpleFormDemo.clickGetTotalButton();
-        String textTotal = pages.seleniumEasy.SimpleFormDemo.readTotal();
+        actualSum = pages.seleniumEasy.SimpleFormDemo.readTotal();
 
-        Assert.assertEquals(textTotal, inputSum);
+        Assert.assertEquals(actualSum, inputSum);
+    }
 
-        //Driver.closeDriver();
+    @AfterMethod
+    public void teardown() {
+        Driver.closeDriver();
     }
 }

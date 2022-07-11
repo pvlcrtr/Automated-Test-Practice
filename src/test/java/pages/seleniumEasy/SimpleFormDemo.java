@@ -14,6 +14,12 @@ public class SimpleFormDemo {
         Common.clickElement(Locators.SeleniumEasy.SimpleFormDemo.buttonCloseAd);
 
     }
+    public static void enterMessage(String expectedMessage) {
+        Common.sendKeysToElement(
+                Locators.SeleniumEasy.SimpleFormDemo.inputMessage,
+                expectedMessage
+        );
+    }
 
     public static void enterValueA(String expectedMessage) {
         Common.sendKeysToElement(
@@ -25,13 +31,6 @@ public class SimpleFormDemo {
     public static void enterValueB(String expectedMessage) {
         Common.sendKeysToElement(
                 Locators.SeleniumEasy.SimpleFormDemo.inputFieldB,
-                expectedMessage
-        );
-    }
-
-    public static void enterMessage(String expectedMessage) {
-        Common.sendKeysToElement(
-                Locators.SeleniumEasy.SimpleFormDemo.inputMessage,
                 expectedMessage
         );
     }
