@@ -20,14 +20,28 @@ public class SimpleFormDemo {
         actualMessage = pages.seleniumEasy.SimpleFormDemo.readMessage();
 
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         Assert.assertEquals(actualMessage, expectedMessage);
 
         Driver.closeDriver();
+    }
+
+    @Test
+    public void testTwoInputFieldsSeleniumEasy() {
+        String inputA = "5";
+        String inputB = "7";
+        String inputSum = "12";
+
+        Driver.setDriver();
+        pages.seleniumEasy.SimpleFormDemo.open();
+        pages.seleniumEasy.SimpleFormDemo.closeAd();
+
+        pages.seleniumEasy.SimpleFormDemo.enterValueA(inputA);
+        pages.seleniumEasy.SimpleFormDemo.enterValueB(inputB);
+        pages.seleniumEasy.SimpleFormDemo.clickGetTotalButton();
+        String textTotal = pages.seleniumEasy.SimpleFormDemo.readTotal();
+
+        Assert.assertEquals(textTotal, inputSum);
+
+        //Driver.closeDriver();
     }
 }

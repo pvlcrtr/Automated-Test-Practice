@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0e2bb5f-b26d-4995-aca6-40e472b9cbd1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Common.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Locators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/SimpleFormDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/SimpleFormDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Driver.java" afterDir="false" />
+    <list default="true" id="a0e2bb5f-b26d-4995-aca6-40e472b9cbd1" name="Changes" comment="Create Common, Driver, Locators, SimpleFormDemo classes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/SimpleFormDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/SimpleFormDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/SimpleFormDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/SimpleFormDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.SimpleFormDemo.testTwoInputFieldsSeleniumEasy">
     <configuration name="SimpleFormDemo.testSingleInputFieldInSeleniumEasy" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POMpaskaita" />
       <extension name="coverage">
@@ -65,8 +59,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimpleFormDemo.testTwoInputFieldsSeleniumEasy" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="POMpaskaita" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.seleniumEasy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.seleniumEasy" />
+      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.SimpleFormDemo" />
+      <option name="METHOD_NAME" value="testTwoInputFieldsSeleniumEasy" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SimpleFormDemo.testTwoInputFieldsSeleniumEasy" />
         <item itemvalue="TestNG.SimpleFormDemo.testSingleInputFieldInSeleniumEasy" />
       </list>
     </recent_temporary>
@@ -80,6 +93,14 @@
       <option name="presentableId" value="Default" />
       <updated>1657527035724</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create Common, Driver, Locators, SimpleFormDemo classes">
+      <created>1657536935247</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657536935247</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,5 +113,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create Common, Driver, Locators, SimpleFormDemo classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Common, Driver, Locators, SimpleFormDemo classes" />
   </component>
 </project>
