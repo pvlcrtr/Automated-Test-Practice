@@ -17,11 +17,8 @@ public class CheckBoxDemo extends BaseTest {
     public void testSingleCheckBox() {
         String actualMessage;
         String expectedMessage = "Success - Check box is checked";
-
         pages.seleniumEasy.CheckBoxDemo.clickSingleCheckBox();
         actualMessage = pages.seleniumEasy.CheckBoxDemo.readMessage();
-
         Assert.assertEquals(actualMessage, expectedMessage);
-
     }
 }
