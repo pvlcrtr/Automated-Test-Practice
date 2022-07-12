@@ -28,7 +28,6 @@ public class RadioButtonsDemo extends BaseTest {
         pages.seleniumEasy.RadioButtonsDemo.clickRadioButton(gender);
         pages.seleniumEasy.RadioButtonsDemo.clickGetCheckedValue();
         String actualMessage = pages.seleniumEasy.RadioButtonsDemo.readMessage();
-
         Assert.assertTrue(actualMessage.contains(gender));
     }
 
@@ -50,7 +49,6 @@ public class RadioButtonsDemo extends BaseTest {
         pages.seleniumEasy.RadioButtonsDemo.clickGroupRadioAgeSelector(ageGroup);
         pages.seleniumEasy.RadioButtonsDemo.clickGetGroupRadioCheckedValue();
         String actualMessage = pages.seleniumEasy.RadioButtonsDemo.readGroupRadioMessage();
-
         Assert.assertTrue(actualMessage.contains(gender));
     }
 }

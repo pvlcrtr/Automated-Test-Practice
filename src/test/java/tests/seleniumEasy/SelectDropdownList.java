@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import tests.BaseTest;
 
 public class SelectDropdownList extends BaseTest {
+
     @BeforeMethod
     @Override
     public void setup() {
@@ -17,13 +18,10 @@ public class SelectDropdownList extends BaseTest {
     public void testSelectDropdownList() {
         String actualMessage;
         String expectedMessage = "Friday";
-
         pages.seleniumEasy.SelectDropdownList.selectDayFromDropdownList(expectedMessage);
         actualMessage = pages.seleniumEasy.SelectDropdownList.readMessage();
-
         Assert.assertTrue(actualMessage.contains(expectedMessage));
     }
-
 }
 
 

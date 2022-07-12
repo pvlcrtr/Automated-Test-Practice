@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0e2bb5f-b26d-4995-aca6-40e472b9cbd1" name="Changes" comment="Create and implement TestListener for screenshots">
+    <list default="true" id="a0e2bb5f-b26d-4995-aca6-40e472b9cbd1" name="Changes" comment="Add test for multiple checkboxdemo">
+      <change afterPath="$PROJECT_DIR$/screenshots/screenshot_6ea1d63a-c417-4623-876f-441fc7b28e67first_screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/screenshot_bee47a2c-3516-481c-ae2e-e72cbdd496befirst_screenshot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Common.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/CheckBoxDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/CheckBoxDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/CheckBoxDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/CheckBoxDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,13 +36,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.CheckBoxDemo.testMultipleCheckBox">
     <configuration name="C:/Users/Pavel Duniak/JavaProjektai/POMpaskaita/TestNG.XML" type="TestNG" nameIsGenerated="true">
       <module name="POMpaskaita" />
@@ -257,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657625026242</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add test for multiple checkboxdemo">
+      <created>1657630846494</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657630846494</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,6 +290,7 @@
     <MESSAGE value="Create TestNG.XML scenario" />
     <MESSAGE value="Create parallel test run" />
     <MESSAGE value="Create and implement TestListener for screenshots" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create and implement TestListener for screenshots" />
+    <MESSAGE value="Add test for multiple checkboxdemo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test for multiple checkboxdemo" />
   </component>
 </project>

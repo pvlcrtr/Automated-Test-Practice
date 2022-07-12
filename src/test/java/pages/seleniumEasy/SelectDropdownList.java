@@ -13,7 +13,7 @@ public class SelectDropdownList {
         Common.selectOptionByValue(
                 Locators.SeleniumEasy.SelectDropdownList.selectDayOfWeek,
                 value
-                );
+        );
     }
 
     public static String readMessage() {

@@ -4,7 +4,6 @@ import pages.Common;
 import pages.Locators;
 
 import java.util.List;
-import java.util.concurrent.RecursiveTask;
 
 public class CheckBoxDemo {
 

@@ -12,7 +12,6 @@ public class SimpleFormDemo {
     public static void closeAd() {
         Common.waitForElementToBeVisible(Locators.SeleniumEasy.SimpleFormDemo.formAd);
         Common.clickElement(Locators.SeleniumEasy.SimpleFormDemo.buttonCloseAd);
-
     }
 
     public static void enterMessage(String expectedMessage) {

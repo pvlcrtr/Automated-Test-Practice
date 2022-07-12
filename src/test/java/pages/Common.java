@@ -59,7 +59,6 @@ public class Common {
         for (WebElement element : elementsList) {
             statusList.add(element.isSelected());
         }
-
         return statusList;
     }
 }

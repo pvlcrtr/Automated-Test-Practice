@@ -1,6 +1,5 @@
 package tests.seleniumEasy;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -27,19 +26,11 @@ public class CheckBoxDemo extends BaseTest {
         return new Object[][]{
                 {"Uncheck All", true},
                 {"Check All", false},
-
         };
     }
 
     @Test(dataProvider = "multipleCheckBox")
     public void testMultipleCheckBox(String expectedButtonText, boolean expectedStatus) {
-        // 1. Spaudziam mygtuka 'Check all'
-        // 2. Patikrinam mygtuko teksta (turetu buti 'Uncheck all')
-        // 3. Patikrinam, kad visi checkbox'ai yra pazymeti
-        // 4. Spaudziam mygtuka 'Uncheck all'
-        // 5. Patikrinam mygtuko teksta (turetu buti 'Check all')
-        // 6. Patikrinma, kad visi checkbox'ai yra nuzymeti
-
         pages.seleniumEasy.CheckBoxDemo.clickMultipleCheckBoxButton();
         if (!expectedStatus) pages.seleniumEasy.CheckBoxDemo.clickMultipleCheckBoxButton();
 
