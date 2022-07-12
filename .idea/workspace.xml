@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0e2bb5f-b26d-4995-aca6-40e472b9cbd1" name="Changes" comment="Create BaseTest and update previous test cases">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/SelectDropdownList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/SelectDropdownList.java" afterDir="false" />
+    <list default="true" id="a0e2bb5f-b26d-4995-aca6-40e472b9cbd1" name="Changes" comment="Add test RadioButtonsDemo class">
+      <change afterPath="$PROJECT_DIR$/TestNG.XML" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Common.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/RadioButtonsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/RadioButtonsDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/CheckBoxDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/CheckBoxDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/RadioButtonsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/RadioButtonsDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +35,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.SelectDropdownList">
+}</component>
+  <component name="RunManager" selected="TestNG.CheckBoxDemo.testSingleCheckBox">
+    <configuration name="C:/Users/Pavel Duniak/JavaProjektai/POMpaskaita/TestNG.XML" type="TestNG" nameIsGenerated="true">
+      <module name="POMpaskaita" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG.XML" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckBoxDemo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="POMpaskaita" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.seleniumEasy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.seleniumEasy" />
+      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.CheckBoxDemo" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CheckBoxDemo.testSingleCheckBox" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POMpaskaita" />
       <extension name="coverage">
@@ -60,7 +97,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectDropdownList" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioButtonsDemo.testGroupRadioButtonsDemoByGenderAndByAgeGroup" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POMpaskaita" />
       <extension name="coverage">
         <pattern>
@@ -69,42 +106,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.seleniumEasy" />
-      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.SelectDropdownList" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleFormDemo" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="POMpaskaita" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.seleniumEasy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.seleniumEasy" />
-      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.SimpleFormDemo" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleFormDemo.testSingleInputFieldInSeleniumEasy" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="POMpaskaita" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.seleniumEasy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.seleniumEasy" />
-      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.SimpleFormDemo" />
-      <option name="METHOD_NAME" value="testSingleInputFieldInSeleniumEasy" />
+      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.RadioButtonsDemo" />
+      <option name="METHOD_NAME" value="testGroupRadioButtonsDemoByGenderAndByAgeGroup" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -112,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleFormDemo.testTwoInputFieldsSeleniumEasy" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioButtonsDemo.testGroupRadioButtonsDemoByMaleGenderByAgeFrom0To5" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POMpaskaita" />
       <extension name="coverage">
         <pattern>
@@ -121,8 +124,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.seleniumEasy" />
-      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.SimpleFormDemo" />
-      <option name="METHOD_NAME" value="testTwoInputFieldsSeleniumEasy" />
+      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.RadioButtonsDemo" />
+      <option name="METHOD_NAME" value="testGroupRadioButtonsDemoByMaleGenderByAgeFrom0To5" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioButtonsDemo.testRadioButtonGender" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="POMpaskaita" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.seleniumEasy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.seleniumEasy" />
+      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.RadioButtonsDemo" />
+      <option name="METHOD_NAME" value="testRadioButtonGender" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -132,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SelectDropdownList" />
-        <item itemvalue="TestNG.SimpleFormDemo" />
         <item itemvalue="TestNG.CheckBoxDemo.testSingleCheckBox" />
-        <item itemvalue="TestNG.SimpleFormDemo.testSingleInputFieldInSeleniumEasy" />
-        <item itemvalue="TestNG.SimpleFormDemo.testTwoInputFieldsSeleniumEasy" />
+        <item itemvalue="TestNG.CheckBoxDemo" />
+        <item itemvalue="TestNG.RadioButtonsDemo.testGroupRadioButtonsDemoByGenderAndByAgeGroup" />
+        <item itemvalue="TestNG.RadioButtonsDemo.testGroupRadioButtonsDemoByMaleGenderByAgeFrom0To5" />
+        <item itemvalue="TestNG.RadioButtonsDemo.testRadioButtonGender" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +205,28 @@
       <option name="project" value="LOCAL" />
       <updated>1657543701120</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add test SelectDropdownList class">
+      <created>1657546178339</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657546178339</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add test RadioButtonsDemo class">
+      <created>1657614389440</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657614389440</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add test RadioButtonsDemo class">
+      <created>1657616851113</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657616851113</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +246,8 @@
     <MESSAGE value="Implement Before and After method annotations" />
     <MESSAGE value="Create test of CheckBoxDemo" />
     <MESSAGE value="Create BaseTest and update previous test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create BaseTest and update previous test cases" />
+    <MESSAGE value="Add test SelectDropdownList class" />
+    <MESSAGE value="Add test RadioButtonsDemo class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test RadioButtonsDemo class" />
   </component>
 </project>

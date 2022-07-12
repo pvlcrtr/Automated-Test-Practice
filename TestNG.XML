@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing Seleniumeasy Website">
+    <test name="Regression">
+        <classes>
+            <class name="tests.seleniumEasy.CheckBoxDemo"/>
+            <class name="tests.seleniumEasy.RadioButtonsDemo"/>
+            <class name="tests.seleniumEasy.SelectDropdownList"/>
+            <class name="tests.seleniumEasy.SimpleFormDemo"/>
+        </classes>
+    </test>
+</suite>
