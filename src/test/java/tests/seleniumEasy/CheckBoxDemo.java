@@ -7,10 +7,8 @@ import tests.BaseTest;
 
 public class CheckBoxDemo extends BaseTest {
     @BeforeMethod
-    @Override
-    public void setup() {
-        super.setup();
-        pages.seleniumEasy.SimpleFormDemo.open();
+    public void initialise() {
+        pages.seleniumEasy.CheckBoxDemo.open();
     }
 
     @Test

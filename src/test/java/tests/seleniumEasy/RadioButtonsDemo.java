@@ -2,6 +2,7 @@ package tests.seleniumEasy;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import tests.BaseTest;
 
@@ -14,44 +15,42 @@ public class RadioButtonsDemo extends BaseTest {
         pages.seleniumEasy.RadioButtonsDemo.open();
     }
 
-    @Test
-    public void testRadioButtonByMaleGender() {
-        String genderMale = "Male";
-        String actualMessage;
-
-        pages.seleniumEasy.RadioButtonsDemo.clickRadioButton(genderMale);
-        pages.seleniumEasy.RadioButtonsDemo.clickGetCheckedValue();
-        actualMessage = pages.seleniumEasy.RadioButtonsDemo.readMessage();
-
-        Assert.assertTrue(actualMessage.contains(genderMale));
+    @DataProvider(name = "radioButtonGender")
+    public Object[][] radioButtonGenderDataProvider() {
+        return new Object[][]{
+                {"Male"},
+                {"Female"}
+        };
     }
 
-    @Test
-    public void testRadioButtonByFemaleGender() {
-
-        String genderFemale = "Female";
-        String actualMessage;
-
-        pages.seleniumEasy.RadioButtonsDemo.clickRadioButton(genderFemale);
+    @Test(dataProvider = "radioButtonGender")
+    public void testRadioButtonGender(String gender) {
+        pages.seleniumEasy.RadioButtonsDemo.clickRadioButton(gender);
         pages.seleniumEasy.RadioButtonsDemo.clickGetCheckedValue();
-        actualMessage = pages.seleniumEasy.RadioButtonsDemo.readMessage();
+        String actualMessage = pages.seleniumEasy.RadioButtonsDemo.readMessage();
 
-        Assert.assertTrue(actualMessage.contains(genderFemale));
+        Assert.assertTrue(actualMessage.contains(gender));
     }
 
-    @Test
-    public void testGroupRadioButtonsDemoByMaleGenderByAgeFrom0To5() {
-        String gender = "Female";
-        String ageGroup = "5 - 15";
-        String actualMessage;
+    @DataProvider(name = "radioButtonGenderAndAgeGroup")
+    public Object[][] radioButtonGenderAndAgeGroupDataProvider() {
+        return new Object[][]{
+                {"Male", "0 - 5"},
+                {"Female", "0 - 5"},
+                {"Male", "5 - 15"},
+                {"Female", "5 - 15"},
+                {"Male", "15 - 50"},
+                {"Female", "15 - 50"}
+        };
+    }
 
+    @Test(dataProvider = "radioButtonGenderAndAgeGroup")
+    public void testGroupRadioButtonsDemoByGenderAndByAgeGroup(String gender, String ageGroup) {
         pages.seleniumEasy.RadioButtonsDemo.clickGroupRadioButtonSex(gender);
         pages.seleniumEasy.RadioButtonsDemo.clickGroupRadioAgeSelector(ageGroup);
         pages.seleniumEasy.RadioButtonsDemo.clickGetGroupRadioCheckedValue();
-        actualMessage = pages.seleniumEasy.RadioButtonsDemo.readGroupRadioMessage();
+        String actualMessage = pages.seleniumEasy.RadioButtonsDemo.readGroupRadioMessage();
 
         Assert.assertTrue(actualMessage.contains(gender));
-
-
     }
 }
