@@ -25,7 +25,7 @@ public class RadioButtonsDemo {
     }
 
     public static void clickGroupRadioAgeSelector(String ageGroup) {
-        Common.clickElement(Locators.SeleniumEasy.RadioButtonsDemo.inputFrom0To5AgeSelectForGroupRadio(ageGroup));
+        Common.clickElement(Locators.SeleniumEasy.RadioButtonsDemo.inputAgeGroupSelectForGroupRadio(ageGroup));
     }
 
     public static void clickGetGroupRadioCheckedValue() {

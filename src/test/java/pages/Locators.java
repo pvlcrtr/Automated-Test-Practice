@@ -2,7 +2,6 @@ package pages;
 
 
 import org.openqa.selenium.By;
-import tests.BaseTest;
 
 public class Locators {
 
@@ -51,7 +50,7 @@ public class Locators {
                         )
                 );
             }
-            public static By inputFrom0To5AgeSelectForGroupRadio( String ageGroup) {
+            public static By inputAgeGroupSelectForGroupRadio( String ageGroup) {
 
                 return By.xpath(
                         String.format("//*[@name = 'ageGroup' and @value='%s']",
