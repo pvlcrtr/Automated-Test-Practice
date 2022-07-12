@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0e2bb5f-b26d-4995-aca6-40e472b9cbd1" name="Changes" comment="Create TestNG.XML scenario">
-      <change afterPath="$PROJECT_DIR$/screenshots/screenshot_3e31052a-a2d4-4bf7-a714-cab7d8d36ab6first_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/screenshot_569dbfdc-2b6c-437f-b78c-3cfb37a50db0first_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/screenshot_976c0113-f713-4c72-b66c-6b746fb04368first_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/screenshot_98d0f593-c614-4785-84e3-0af871af1ed4first_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/screenshot_bae76ea8-7a70-4843-9ee3-d87aec508baafirst_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/screenshot_d958b020-5589-4fc8-94fb-090ac32bbe2afirst_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/TestListener.java" afterDir="false" />
+    <list default="true" id="a0e2bb5f-b26d-4995-aca6-40e472b9cbd1" name="Changes" comment="Create and implement TestListener for screenshots">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG.XML" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.XML" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Common.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/RadioButtonsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/RadioButtonsDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/CheckBoxDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/seleniumEasy/CheckBoxDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/CheckBoxDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/seleniumEasy/CheckBoxDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.RadioButtonsDemo.testGroupRadioButtonsDemoByGenderAndByAgeGroup">
+  <component name="RunManager" selected="TestNG.CheckBoxDemo.testMultipleCheckBox">
     <configuration name="C:/Users/Pavel Duniak/JavaProjektai/POMpaskaita/TestNG.XML" type="TestNG" nameIsGenerated="true">
       <module name="POMpaskaita" />
       <shortenClasspath name="NONE" />
@@ -84,6 +76,24 @@
       <option name="PACKAGE_NAME" value="tests.seleniumEasy" />
       <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.CheckBoxDemo" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckBoxDemo.testMultipleCheckBox" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="POMpaskaita" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.seleniumEasy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.seleniumEasy" />
+      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.CheckBoxDemo" />
+      <option name="METHOD_NAME" value="testMultipleCheckBox" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -144,31 +154,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioButtonsDemo.testRadioButtonGender" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="POMpaskaita" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.seleniumEasy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.seleniumEasy" />
-      <option name="MAIN_CLASS_NAME" value="tests.seleniumEasy.RadioButtonsDemo" />
-      <option name="METHOD_NAME" value="testRadioButtonGender" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckBoxDemo.testMultipleCheckBox" />
         <item itemvalue="TestNG.RadioButtonsDemo.testGroupRadioButtonsDemoByGenderAndByAgeGroup" />
         <item itemvalue="TestNG.CheckBoxDemo.testSingleCheckBox" />
         <item itemvalue="TestNG.CheckBoxDemo" />
         <item itemvalue="TestNG.RadioButtonsDemo.testGroupRadioButtonsDemoByMaleGenderByAgeFrom0To5" />
-        <item itemvalue="TestNG.RadioButtonsDemo.testRadioButtonGender" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657618134962</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Create parallel test run">
+      <created>1657624988244</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1657624988244</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Create and implement TestListener for screenshots">
+      <created>1657625026242</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1657625026242</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,6 +282,8 @@
     <MESSAGE value="Add test RadioButtonsDemo class" />
     <MESSAGE value="Add DataProvider for tests" />
     <MESSAGE value="Create TestNG.XML scenario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create TestNG.XML scenario" />
+    <MESSAGE value="Create parallel test run" />
+    <MESSAGE value="Create and implement TestListener for screenshots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create and implement TestListener for screenshots" />
   </component>
 </project>

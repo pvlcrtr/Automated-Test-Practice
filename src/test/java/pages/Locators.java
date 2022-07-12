@@ -21,6 +21,8 @@ public class Locators {
         public static class CheckBoxDemo {
             public static By inputSingleCheckBox = By.xpath("//*[@id='isAgeSelected']");
             public static By fieldSingleCheckBox = By.xpath("//*[@id='txtAge']");
+            public static By inputMultipleCheckBox = By.xpath("//*[@class='cb1-element']");
+            public static By buttonCheckAll = By.xpath("//*[@id='check1']");
 
         }
 
@@ -43,6 +45,7 @@ public class Locators {
                         )
                 );
             }
+
             public static By inputByGenderForGroupRadio(String gender) {
                 return By.xpath(
                         String.format("//*[@name = 'gender' and @value='%s']",
@@ -50,11 +53,12 @@ public class Locators {
                         )
                 );
             }
-            public static By inputAgeGroupSelectForGroupRadio( String ageGroup) {
+
+            public static By inputAgeGroupSelectForGroupRadio(String ageGroup) {
 
                 return By.xpath(
                         String.format("//*[@name = 'ageGroup' and @value='%s']",
-                        ageGroup
+                                ageGroup
                         )
                 );
             }
