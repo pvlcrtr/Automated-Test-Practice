@@ -16,7 +16,7 @@ public class Driver {
     public static void setDriver() {
         WebDriverManager.chromiumdriver().setup();
         driver.set(new ChromeDriver());
-        driver.get().manage().window().setSize(new Dimension(3000, 2000));
+        driver.get().manage().window().setSize(new Dimension(1920, 1080));
     }
 
     public static void closeDriver() {
