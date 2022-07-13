@@ -16,4 +16,12 @@ public class Buttons {
     public static String readMessageOfDoubleClick() {
        return pages.Common.getElementText(Locators.DemoQA.Buttons.fieldDoubleClick);
     }
+
+    public static void performRightClick() {
+        pages.Common.rightClickElement(Locators.DemoQA.Buttons.buttonRightClick);
+    }
+
+    public static String readMessageOfRightClick() {
+        return pages.Common.getElementText(Locators.DemoQA.Buttons.fieldRightClick);
+    }
 }

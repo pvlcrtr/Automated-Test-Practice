@@ -18,11 +18,6 @@ public class Common {
         Driver.getDriver().get(url);
     }
 
-    public static void waitForElementToBeVisible(By locator) {
-        WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
-
     public static WebElement getElement(By locator) {
         return Driver.getDriver().findElement(locator);
     }
@@ -67,5 +62,39 @@ public class Common {
         WebElement element = getElement(locator);
         Actions action = new Actions(Driver.getDriver());
         action.moveToElement(element).doubleClick().perform();
+    }
+
+    public static void clickElementByAction(By locator) {
+        WebElement element = getElement(locator);
+        Actions action = new Actions(Driver.getDriver());
+        action.moveToElement(element);
+        action.click(element);
+        action.perform();
+    }
+
+    public static void rightClickElement(By locator) {
+        WebElement element = getElement(locator);
+        Actions action = new Actions(Driver.getDriver());
+        action.moveToElement(element);
+        action.contextClick(element);
+        action.perform();
+    }
+
+    public static void waitForElementToBeVisible(By locator) {
+        WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public static void waitForElementToBeClickable(By locator) {
+        WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
+    public static void waitForElementAtributeContain(
+            By locator,
+            String atributeName,
+            String atributeValue) {
+        WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.attributeContains(locator, atributeName, atributeValue));
     }
 }

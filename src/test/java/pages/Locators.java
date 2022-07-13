@@ -4,7 +4,6 @@ package pages;
 import org.openqa.selenium.By;
 
 public class Locators {
-
     public static class SeleniumEasy {
         public static class SimpleFormDemo {
             public static By formAd = By.xpath("//div[@id='at-cv-lightbox-content']");
@@ -64,12 +63,26 @@ public class Locators {
             }
         }
     }
+    public static class DemoQA {
+        public static class Home {
+            public static By menuElements = By.xpath("//*[@class=\"category-cards\"]/div[1]");
+        }
 
-    public static class DemoQA{
+        public static class Elements {
+            public static By menuButtons = By.xpath("//*[@class=\"element-list collapse show\" ]//*[@id=\"item-4\"]");
+        }
 
-        public static class Buttons{
+        public static class Buttons {
             public static By buttonDoubleClick = By.xpath("//*[@id='doubleClickBtn']");
             public static By fieldDoubleClick = By.xpath("//*[@id='doubleClickMessage']");
+            public static By buttonRightClick = By.xpath("//*[@id=\"rightClickBtn\"]\n");
+            public static By fieldRightClick = By.xpath("//*[@id=\"rightClickMessage\"]\n");
+        }
+
+        public static class DynamicProperties{
+            public static By buttonAfterEnabled = By.xpath("//*[@id=\"enableAfter\"]\n");
+            public static By buttonAfterColorChangeStatus = By.xpath("//*[@id=\"colorChange\"]\n");
+
         }
     }
 }

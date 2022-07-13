@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Driver {
 
@@ -15,8 +16,11 @@ public class Driver {
 
     public static void setDriver() {
         WebDriverManager.chromiumdriver().setup();
-        driver.set(new ChromeDriver());
-        driver.get().manage().window().setSize(new Dimension(1920, 1080));
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--force-device-scale-factor=0.5");
+
+        driver.set(new ChromeDriver(options));
+        driver.get().manage().window().setSize(new Dimension(3000, 2000));
     }
 
     public static void closeDriver() {
