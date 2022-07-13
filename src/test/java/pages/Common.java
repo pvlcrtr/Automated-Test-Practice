@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -96,5 +97,19 @@ public class Common {
             String atributeValue) {
         WebDriverWait webDriverWait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
         webDriverWait.until(ExpectedConditions.attributeContains(locator, atributeName, atributeValue));
+    }
+
+    public static void acceptAlert() {
+        Driver.getDriver().switchTo().alert().accept();
+
+    }
+
+    public static boolean isAlertPresent() {
+                try {
+            Driver.getDriver().switchTo().alert();
+            return true;
+        } catch (NoAlertPresentException e) {
+            return false;
+        }
     }
 }
