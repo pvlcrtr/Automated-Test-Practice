@@ -23,4 +23,22 @@ public class JavascriptAlertsBoxDemo extends BaseTest {
                 pages.seleniumEasy.JavascriptAlertsBoxDemo.isAlertPresent()
         );
     }
+    @Test
+    public void testAcceptConfirmBox(){
+        String expectedMessage = "OK";
+        pages.seleniumEasy.JavascriptAlertsBoxDemo.clickButtonToOpenConfirmBox();
+        pages.seleniumEasy.JavascriptAlertsBoxDemo.clickOkToCloseConfirmBox();
+        String actualMessage = pages.seleniumEasy.JavascriptAlertsBoxDemo.readMessageFromConfirmBox();
+
+        Assert.assertTrue(actualMessage.contains(expectedMessage));
+    }
+    @Test
+    public void testRejectConfirmBox(){
+        String expectedMessage = "Cancel";
+        pages.seleniumEasy.JavascriptAlertsBoxDemo.clickButtonToOpenConfirmBox();
+        pages.seleniumEasy.JavascriptAlertsBoxDemo.clickCancelToCloseConfirmBox();
+        String actualMessage = pages.seleniumEasy.JavascriptAlertsBoxDemo.readMessageFromConfirmBox();
+
+        Assert.assertTrue(actualMessage.contains(expectedMessage));
+    }
 }

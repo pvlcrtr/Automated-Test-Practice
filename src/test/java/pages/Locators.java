@@ -8,6 +8,9 @@ public class Locators {
 
         public static class JavascriptAlertsBoxDemo{
             public static By buttonOpenAlertBox = By.xpath("//button[@class=\"btn btn-default\"]");
+            public static By buttonOpenConfirmBox =
+                    By.xpath("//button[@class=\"btn btn-default btn-lg\" and text()=\"Click me!\"]");
+            public static By fieldMessageOfConfirmBox = By.xpath("//p[@id=\"confirm-demo\"]");
 
     }
         public static class SimpleFormDemo {

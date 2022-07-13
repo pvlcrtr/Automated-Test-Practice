@@ -103,6 +103,10 @@ public class Common {
         Driver.getDriver().switchTo().alert().accept();
 
     }
+    public static void dismissAlert() {
+        Driver.getDriver().switchTo().alert().dismiss();
+
+    }
 
     public static boolean isAlertPresent() {
                 try {
